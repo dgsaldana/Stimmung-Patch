@@ -1,0 +1,27 @@
+Stimmung Patch
+V20241111
+
+Summary
+-The Max patch provides the drone outlined by Stockhausen (Bb, F, Bb, D, F, A, C). A vocoder (Waves Morphoder) on the same pitches has been embedded into the sinusoidal synthesis, processing the six singers. Six microphone input signals and three outputs are required. Main LR out + Mono vocal signal return for singer floor monitor. The electronics performer sits outside of the central circle. There is an additional PTZ camera control option through HTTP command sent from the patch if projection is available in the venue. 
+
+Drone
+-Additive synthesis of the six pitches (fundamental + overtone)
+-Vocoder processing the six vocals added to base drone
+-Button triggers to emphasize any of the six pitches for appropriate places in the form schema. 
+
+-LR output
+-Randomized sweep through pitches for continued movement of drone.
+
+Vocal Harp
+-Requires ZSA analysis tool package
+-A sympathetic resonance function, similar to strings of sitar. 
+-Captures and analyzes the spectral image of each microphone
+-Sets resonance frequencies to the pattern and strengths of overtones in captured spectral image
+-Button trigger to capture new image
+-Free tracking function allows for the software to continuously analyze the voices, producing an uncontrolled effect.
+
+PTZ Camera Control (Optional)
+-A camera placed at the center of the table
+-Networked to the player's laptop
+-HTTP command sent via UDPsend controls the positioning
+-Button trigger allows for automated movement of camera to each performer.
